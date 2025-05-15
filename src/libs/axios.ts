@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 const confiAxios = axios.create({
-    baseURL: "http://localhost:5000/api",
+    baseURL: import.meta.env.API_URL_RENDER,
     withCredentials: true,    
 })
 
