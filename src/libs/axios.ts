@@ -1,9 +1,10 @@
 import { useAuthStore } from "@/store/auth";
 import axios from "axios";
+import { environment } from "./environment";
 
 
 const confiAxios = axios.create({
-    baseURL: import.meta.env.API_URL_RENDER,
+    baseURL: environment.apiUrl,
     withCredentials: true,    
 })
 
