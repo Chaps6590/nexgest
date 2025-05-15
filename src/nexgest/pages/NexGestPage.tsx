@@ -1,6 +1,6 @@
 
 import { NexGestLayout } from "../layout/NexGestLayout";
-import { NothingSelectedView,NoteView } from "../views";
+import { NoteView } from "../views";
 
 
 export const NexGestPage = () => {

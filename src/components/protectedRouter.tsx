@@ -1,4 +1,3 @@
-import { useAuthStore } from "@/store/auth";
 import { Navigate, Outlet } from "react-router-dom";
 
 interface Props {
