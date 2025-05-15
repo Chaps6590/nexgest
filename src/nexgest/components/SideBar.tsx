@@ -1,4 +1,4 @@
-import { Bookmark } from "lucide-react"
+import { Bookmark,CalendarDaysIcon  } from "lucide-react"
 import { JSX } from "react"
 
 interface SideBarProps {
@@ -13,9 +13,9 @@ interface MenuItem {
 
 const menuItems: MenuItem[] = [
   {
-    title: "Usuarios",
-    description: "Gestión de usuarios y permisos",
-    icon: <Bookmark className="w-5 h-5 mt-1" />,
+    title: "Agenda",
+    description: "Gestión de turnos",
+    icon: <CalendarDaysIcon className="w-5 h-5 mt-1" />,
   },
   {
     title: "Tareas",
@@ -32,12 +32,9 @@ const menuItems: MenuItem[] = [
 export const SideBar = (({ drawerWidth }: SideBarProps) => {
   return (
     <nav
-      className={`bg-zinc-800 text-white h-screen shadow-md flex flex-col mt-[calc()`}
+      className={`bg-blue-950 text-white h-screen shadow-md flex flex-col mt-[calc()`}
       style={{ width: drawerWidth }}
     >
-      <div className="p-4 border-b border-zinc-700">
-        <h1 className="text-lg font-semibold tracking-wide">Chaps</h1>
-      </div>
 
       <ul className="mt-2 flex flex-col gap-1">
         {menuItems.map(({ title, description, icon }) => (

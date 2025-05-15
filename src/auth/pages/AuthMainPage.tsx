@@ -68,9 +68,9 @@ export const AuthMainPage = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-      <div className="bg-[#fafafa] p-8 rounded-xl shadow-lg w-full max-w-sm">
+      <div className="bg-black p-8 rounded-xl shadow-lg w-full max-w-sm">
         {/* Título dinámico */}
-        <h2 className="text-2xl font-bold text-center mb-6">
+        <h2 className="text-2xl font-bold text-center mb-6 text-white">
           {isLogin ? "Login" : "Sign Up"}
         </h2>
 
@@ -79,7 +79,7 @@ export const AuthMainPage = () => {
           <button
             onClick={() => setIsLogin(true)}
             className={`w-1/2 py-2 rounded-full text-sm font-semibold transition-colors ${isLogin
-                ? "bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white"
+                ? "bg-gradient-to-r from-blue-600 to-cyan-400 text-white"
                 : "text-gray-700"
               }`}
           >
@@ -88,7 +88,7 @@ export const AuthMainPage = () => {
           <button
             onClick={() => setIsLogin(false)}
             className={`w-1/2 py-2 rounded-full text-sm font-semibold transition-colors ${!isLogin
-                ? "bg-gradient-to-r from-purple-500 to-fuchsia-500 text-white"
+                ? "bg-gradient-to-r from-blue-600 to-cyan-400 text-white"
                 : "text-gray-700"
               }`}
           >
@@ -104,7 +104,7 @@ export const AuthMainPage = () => {
               placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-400"
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-50"
             />
           )}
 
@@ -113,7 +113,7 @@ export const AuthMainPage = () => {
             placeholder="Email Address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-400"
+            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-50"
           />
 
           <input
@@ -121,7 +121,7 @@ export const AuthMainPage = () => {
             placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-400"
+            className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-50"
           />
 
           {!isLogin && (
@@ -130,31 +130,31 @@ export const AuthMainPage = () => {
               placeholder="Confirm Password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-400"
+              className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-amber-50"
             />
           )}
 
           {isLogin && (
-            <div className="text-right text-sm text-purple-500">
+            <div className="text-right text-sm text-white">
               <a href="#">Forgot password?</a>
             </div>
           )}
 
           <button
             type="submit"
-            className="w-full py-2 mt-2 text-white rounded-full bg-gradient-to-r from-purple-500 to-fuchsia-500 hover:opacity-90 transition"
+            className="w-full py-2 mt-2 text-white rounded-full bg-gradient-to-r from-blue-800 to-blue-400 hover:opacity-90 transition"
           >
             {isLogin ? "Login" : "Signup"}
           </button>
 
-          <div className="text-center text-sm text-gray-600 mt-2">
+          <div className="text-center text-sm text-white mt-2">
             {isLogin ? (
               <>
                 Don’t have an account?{" "}
                 <button
                   type="button"
                   onClick={() => setIsLogin(false)}
-                  className="text-purple-500 underline"
+                  className="text-white underline"
                 >
                   Signup now
                 </button>
@@ -165,7 +165,7 @@ export const AuthMainPage = () => {
                 <button
                   type="button"
                   onClick={() => setIsLogin(true)}
-                  className="text-purple-500 underline"
+                  className="text-white underline"
                 >
                   Login
                 </button>
