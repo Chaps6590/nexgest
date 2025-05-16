@@ -4,7 +4,7 @@ import { environment } from "./environment";
 
 
 const confiAxios = axios.create({
-    baseURL: environment.apiUrlLocal,
+    baseURL: environment.apiUrl,
     withCredentials: true,    
 })
 
