@@ -1,7 +1,7 @@
-
+const isLocalhost = window.location.hostname === "localhost";
 
 export const environment = {
-  apiUrl: "https://nexgestapi.onrender.com/api",
-  apiUrlLocal:"http://localhost:5000/api"
-  // otros valores que quieras centralizar
+  apiUrl: isLocalhost
+    ? "http://localhost:5000/api"
+    : "https://nexgestapi.onrender.com/api",
 };
