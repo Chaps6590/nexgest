@@ -1,2 +1,2 @@
-export * from './NoteView';
+export * from './CalendarView';
 export * from './NothingSelectedView';

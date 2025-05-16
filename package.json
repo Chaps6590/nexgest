@@ -12,6 +12,9 @@
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@radix-ui/react-slot": "^1.2.0",
+    "@schedule-x/calendar": "^2.31.0",
+    "@schedule-x/react": "^2.30.0",
+    "@schedule-x/theme-shadcn": "^2.31.0",
     "@shadcn/ui": "^0.0.4",
     "@tailwindcss/vite": "^4.1.4",
     "axios": "^1.9.0",

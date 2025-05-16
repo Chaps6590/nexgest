@@ -1,6 +1,6 @@
 
 import { NexGestLayout } from "../layout/NexGestLayout";
-import { NoteView } from "../views";
+import { CalendarView } from "../views";
 
 
 export const NexGestPage = () => {
@@ -10,7 +10,7 @@ export const NexGestPage = () => {
         
       {/*<NothingSelectedView />*/}
 
-      {<NoteView />}
+      {<CalendarView />}
 
     </NexGestLayout>
   );
